@@ -1,0 +1,19 @@
+#anagram
+import itertools
+s="cat"
+s2="tac"
+c=[]
+perms = itertools.permutations(s)
+for i in perms:
+    d=(''.join(i))
+    c.append(d)
+b=0
+for j in c:
+    if(j==s):
+        b+=1
+if(b!=0):
+    print("anagram")
+else:
+    print("nope")
+
+
