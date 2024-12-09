@@ -1,0 +1,14 @@
+import array
+arr=array.array('i',[1,2,3,1,4,5])
+k=int(input("enter value k"))
+c=[]
+for i in range(len(arr)- k + 1):
+    l=[]
+    for j in range(i,k+i):
+        #print(arr[j])
+        l.append(arr[j])
+
+    print(l)
+    b=max(l)
+    c.append(b)
+print(c)
