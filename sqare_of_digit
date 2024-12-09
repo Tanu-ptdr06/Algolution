@@ -1,0 +1,19 @@
+def squ(a,visited=None):
+
+    visited=set()
+    sum = 0
+    for i in str(a):
+       sum += int(i) * int(i)
+    print(sum)
+    if(sum==1):
+        return True
+    elif(sum in visited):
+        return False
+    else:
+        visited.add(sum)
+    return squ(sum,visited)
+
+
+
+result = squ(19)
+print(result)
